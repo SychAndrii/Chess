@@ -1,0 +1,59 @@
+.light_cell {
+    background-color: #F0D9B5;
+}
+
+.dark_cell {
+    background-color: #B58863;
+}
+
+.board_cell {
+    height: 10vw;
+    position: relative;
+}
+
+.figure {
+    width: 100%;
+    max-height: 100%;
+}
+
+.emptyFigure {
+    height: 100%;
+}
+
+.icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(26, 25, 25, 0.6);
+    border-radius: 50%;
+}
+
+.figureIcon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(26, 25, 25, 0.6);
+    border-radius: 50%;
+    background-size: 50px 50px;
+}
+
+@media screen and (min-width: 1000px) {
+    .board_cell {
+        height: 105px !important;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .board_cell {
+        padding: 2px !important;
+    }
+    .figureIcon {
+        height: 50%;
+        width: 50%;
+    }
+    .moveIcon {
+        width: 50%;
+        height: 50%;
+    }
+}
